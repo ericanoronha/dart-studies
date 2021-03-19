@@ -1,0 +1,34 @@
+void main() {
+  List numbers = [5, 7, 10, 3, 19];
+
+  print("Empty? ${numbers.isEmpty}");
+  print("Not empty? ${numbers.isNotEmpty}");
+  print("Length: ${numbers.length}");
+
+  // add all the numbers
+  int total = 0;
+  for (int i = 0; i < numbers.length; i++) {
+    total += numbers[i];
+  }
+
+  print("Total: $total");
+
+  // empty the list
+  numbers.clear();
+
+  print("\nEmpty? ${numbers.isEmpty}");
+  print("Not empty? ${numbers.isNotEmpty}");
+  print("Length: ${numbers.length}");
+
+  total = 0;
+  for (int i = 0; i < numbers.length; i++) {
+    total += numbers[i];
+  }
+  print("Total: $total");
+
+  //when you declare a variable of type List, you're implicitly saying you want a list that can store any type
+  List<dynamic> stuff = ["Bob", "Jerry", "Tim", 15, 3.14, true];
+  for (int i = 0; i < stuff.length; i++) {
+    print(stuff[i]);
+  }
+}

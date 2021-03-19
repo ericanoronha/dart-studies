@@ -1,0 +1,25 @@
+void main() {
+  String characterRace = "elf";
+  switch (characterRace) {
+    case "dwarf":
+      print("Battle Axe");
+      break;
+    case "elf":
+      print("Longbow");
+      break;
+    case "goblin":
+      print("Short Sword");
+      break;
+    case "halfling":
+      print("Dagger");
+      break;
+    case "human":
+      print("Longsword");
+      break;
+    case "orc":
+      print("Mace");
+      break;
+    default:
+      print("Club");
+  }
+}

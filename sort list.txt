@@ -1,0 +1,20 @@
+void main() {
+  List<String> students = ["Mary", "Jon", "Sally", "Bob"];
+  print(students);
+
+  students.sort();
+  print(students);
+
+  String first = students.first;
+  print(first);
+  String last = students.last;
+  print(last);
+
+  printList(["Dart", "JavaScript", "TypeScript", "C++"]);
+}
+
+void printList(List<String> list) {
+  for (String element in list) {
+    print(element);
+  }
+}

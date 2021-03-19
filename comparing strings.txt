@@ -1,0 +1,18 @@
+void main() {
+  String name1 = "Terrence";
+  String name2 = "Philip";
+  String name3 = "philip";
+
+  print(compareStrings(name1, name2));
+  print(compareStrings(name2, name3));
+  print(compareStrings(name2, name3, caseSensitive: true));
+}
+
+bool compareStrings(String a, String b, {bool caseSensitive = false}) {
+  if (!caseSensitive) {
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+  }
+
+  return a == b;
+}

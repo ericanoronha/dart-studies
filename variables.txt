@@ -1,0 +1,10 @@
+void main() {
+  var x, y;
+  x = 16;
+  y = 20;
+  print("$x + $y = ${x + y}");
+  
+  String name = "Erica";
+  print("$name starts with ${name[0]}.");
+  print("Her name contains ${name.length} letters.");
+}

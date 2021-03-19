@@ -1,0 +1,29 @@
+void main() {
+/*
+  There are two types of optional parameters in Dart functions. There are positional optional parameters and named optional parameters.
+  void myFunction([String param1, int param2, bool param3])
+
+  you can add more sensible defaults to the function declaration:
+  void myFunction([String name = "Jim", int age = 30, bool retired = false])
+*/
+  print("First run:");
+  myFunction("Jim", 30, true);
+  print("\nSecond run:");
+  myFunction("Bob", 54);
+  print(r" ");//////////////////////////////////////////////
+  print("First run:");
+  setFlags();
+  print("\nSecond run:");
+  setFlags(hidden: true);
+}
+
+void myFunction(String name, int age, [bool retired = false]) {
+  print(name);
+  print(age);
+  print(retired);
+}
+
+void setFlags({bool bold = false, bool hidden = false}) {
+  print(bold);
+  print(hidden);
+}

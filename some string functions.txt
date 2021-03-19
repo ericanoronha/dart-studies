@@ -1,0 +1,68 @@
+void main(){
+  String str = "Dart is great.";
+
+  if (str.startsWith("D"))
+    print('The string starts with "D"');  
+
+  if (str.endsWith("eat."))
+    print('The last characters of the string are "eat."');
+    
+  if (str.contains("t")) 
+    print('This string definitely has a "T"');
+
+  if (str[5] == "i")
+    print('The character at index 5 is "i"');
+
+  print("Index 3 (the fourth character): ${str[3]}");
+    
+  for (int i = 0; i < str.length; i++) {
+    print(str[i]);
+  }
+
+  int indexOfS = str.indexOf("s");  
+  int indexOfGreat = str.indexOf("great");
+  int indexOfJavaScript = str.indexOf("JavaScript");
+  int indexOfT = str.lastIndexOf("t");
+  
+  print("\nIndex of s: $indexOfS");
+  print("Index of great: $indexOfGreat");
+  print("Index of JavaScript: $indexOfJavaScript");
+  print("Last index of t: $indexOfT");
+
+  String firstName = "Russell";
+  String lastName = "";
+  
+  print("firstName\n  Empty: ${firstName.isEmpty}\n  Not Empty: ${firstName.isNotEmpty}");
+  print("lastName\n  Empty: ${lastName.isEmpty}\n  Not Empty: ${lastName.isNotEmpty}");
+
+  print("\nErica " + reverseString("Erica") + "\n");
+
+  String userInput = "  John ";
+  
+  userInput = userInput.trim(); //trimLeft() and trimRight()
+  print(userInput);
+
+  print("");
+
+  //padding
+  String name = "Terrence";
+
+  print(name.padLeft(12));
+  print(name.padLeft(12, '*'));
+
+  //substring
+  String name = "philip";
+
+  print(name.substring(2));       // result: "ilip"
+  print(name.substring(2, 4));    // result: "il"
+}
+
+String reverseString(String input) {
+  String output = '';
+  
+  for (int i = input.length - 1; i >= 0; i--) {
+    output += input[i];
+  }
+  
+  return output;
+}

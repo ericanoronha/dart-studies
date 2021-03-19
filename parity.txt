@@ -1,0 +1,12 @@
+void main() {
+  int number = 7;
+  String parity;
+
+  if (number % 2 == 0) {
+    parity = "even";
+  } else {
+    parity = "odd";
+  }  
+  
+  print("The number $number is $parity.");
+}

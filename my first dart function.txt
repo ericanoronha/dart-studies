@@ -1,0 +1,7 @@
+void main(){
+  greet("Erica");
+}
+void greet(String name) {
+  var now = DateTime.now();
+  print("Hello $name, ${now.toUtc()}");
+}

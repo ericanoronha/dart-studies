@@ -1,0 +1,12 @@
+void main() {
+  String name = "erica";
+  print(capitalize(name));
+}
+//String capitalize(String s) => "${s[0].toUpperCase()}${s.substring(1)}";
+
+String capitalize(String input) {
+  String firstLetter = input[0].toUpperCase();
+  String restOfString = input.substring(1);
+
+  return "$firstLetter$restOfString";
+}

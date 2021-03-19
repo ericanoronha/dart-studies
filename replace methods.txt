@@ -1,0 +1,11 @@
+void main(){
+  String lyrics = 
+  "I\'m blue\nI\'m blue\nI\'m blue, da ba dee da ba daa\nDa ba dee da ba daa, da ba dee da ba daa\nDa ba dee da ba daa, da ba dee da ba daa\nDa ba dee da ba daa, da ba dee da ba daa";
+  print(lyrics.replaceAll("blue", "red"));
+}
+
+/*
+The replaceAll() method, true to its name, will replace every instance of the first argument with the second. It's also possible to replace only the first instance of the pattern with replaceFirst().
+
+One more time: The replace methods do not modify the string they're called on. They create a new string with the replacements in place.
+*/

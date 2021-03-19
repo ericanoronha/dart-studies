@@ -1,0 +1,32 @@
+void main() {
+  String word1 = "Anaconda";
+  String word2 = "Flavor";
+
+  print('"Anaconda" is an isogram: ${isIsogram(word1)}');
+  print('"Flavor" is an isogram: ${isIsogram(word2)}');
+}
+
+bool isIsogram(String word) {
+  // make sure the word is all lowercase
+  word = word.toLowerCase();
+
+  // convert the string into a list of letters
+  List<String> letters = word.split('');
+  //you could call split(',') to break the string into a list of number characters based on the comma separator
+
+  // sort the list
+  letters.sort();
+
+  // loop over the list, looking for duplicate letters
+  String lastLetter;
+  for (String letter in letters) {
+    if (letter == lastLetter) {
+      return false;
+    }
+
+    lastLetter = letter;
+  }
+
+  // if we get this far, we found an isogram
+  return true;
+}

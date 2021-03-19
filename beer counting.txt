@@ -1,0 +1,8 @@
+void main() {
+  int beers = 99;
+  do {
+    print("$beers bottles of beer on the wall, $beers bottles of beer.");
+    print("You take one down, pass it around... ");
+    print("${beers -= 1} bottles of beer on the wall.\n");
+  } while (beers > 1);
+}

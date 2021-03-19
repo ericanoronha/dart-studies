@@ -1,0 +1,26 @@
+void main() {
+  // input values
+  num f = 32;
+  num c = 100;
+  
+  // convert
+  num convertedC = (f - 32) / 1.8;
+  num convertedF = 1.8 * c + 32;
+
+  print("$f degrees Fahrenheit is $convertedC degrees Celsius.");
+  print("$c degrees Celsius is $convertedF degrees Fahrenheit.");
+  
+  num cold = 60;
+  num freezing = 40;
+  num temperature = 57;
+
+  print("Is it cold outside?");  
+
+  if (temperature > cold) {
+    print("No, quite toasty, really.");
+  } else if (temperature > freezing) {
+    print("It is a bit cold. Perhaps a jacket.");
+  } else {
+    print("It's freezing! Where's my coat?");
+  }
+}
