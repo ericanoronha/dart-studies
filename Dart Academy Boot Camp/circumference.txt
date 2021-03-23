@@ -1,0 +1,10 @@
+const num pi = 3.14159;
+
+void main() {
+  print("Diameter: 7 -> Circumference: ${circumferenceFromDiameter(7)}");
+  print("Radius: 8 -> Circumference: ${circumferenceFromRadius(8)}");
+}
+
+num circumferenceFromDiameter(num diameter) => pi * diameter;
+
+num circumferenceFromRadius(num radius) => (2 * pi) * radius;

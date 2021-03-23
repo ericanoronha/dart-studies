@@ -1,0 +1,22 @@
+void main() {
+  String firstName = "Erica";
+  String lastName = "Noronha";
+  final String name = "$firstName $lastName";
+
+  print(name);
+}
+// The final keyword tells Dart that we want to create a normal variable, but we don't want it to be modified after it receives an initial value. With this code, firstName and lastName could come from the user at runtime, then name would be created from those variables' values, also at runtime. We get one of the benefits of constants (immutability), but using variables instead.
+
+/*
+** error-prone version using const
+**
+void main() {
+  const String firstName = "Erica";
+  const String lastName = "Noronha";
+  const String name = "$firstName $lastName";
+
+  print(name);
+}
+
+The first two are no longer constants at all. They're variables. You might be asking your program's user for his first and last name, and in that case, you'd store the user's responses in variables, as they wouldn't be eligible to be constants. Constants must be known before the code executes. This code will not run, since you're asking Dart to construct the name constant from string data that doesn't exist until the code executes. Variables are not initialized until runtime, as opposed to compile time.
+*/

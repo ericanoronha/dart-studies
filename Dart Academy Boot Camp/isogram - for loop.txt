@@ -1,0 +1,23 @@
+void main() {
+  String word1 = "Anaconda";
+  String word2 = "Flavor";
+
+  print('"Anaconda" is an isogram: ${isIsogram(word1)}');
+  print('"Flavor" is an isogram: ${isIsogram(word2)}');
+}
+
+bool isIsogram(String word) {
+  word = word.toLowerCase();
+
+  List<String> letters = word.split('');
+
+  letters.sort();
+
+  for (int i = 1; i < letters.length; i++) {
+    if (letters[i] == letters[i - 1]) {
+      return false;
+    }
+  }
+
+  return true;
+}
