@@ -1,0 +1,10 @@
+/**
+num sum(num x, num y){
+  return x+y;
+}
+*/
+num sum(num x, num y) => x+y;
+
+main() {
+  print(sum(1,2));
+}  

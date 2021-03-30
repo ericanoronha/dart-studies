@@ -1,0 +1,17 @@
+main() {
+  var color = 'red';
+  
+  switch(color) {
+    case 'red': 
+      print('green');
+      break;
+    case 'yellow': 
+      print('purple');
+      break;
+    case 'blue': 
+      print('orange');
+      break;
+    default:
+      print('not a primary color');
+  }
+}

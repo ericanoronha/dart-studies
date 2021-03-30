@@ -1,0 +1,12 @@
+int factorial(int x) {
+  if (x == 1) { // Base Case
+    return 1;
+  } else {
+    return x*factorial(x-1); // Recursive Call
+  }
+}
+
+main() {
+  var result = factorial(5);
+  print(result);
+}

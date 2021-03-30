@@ -1,0 +1,20 @@
+main() {
+  var listOfVegetables = ['potato', 'carrot', 'cucumber', 'cabbage'];
+
+  print("listOfVegetables: $listOfVegetables");
+
+  listOfVegetables.addAll(['broccoli', 'zucchini']); 
+
+  print(listOfVegetables);
+
+  var vegetablesToAdd = ['okra', 'capsicum'];
+
+  listOfVegetables.addAll(vegetablesToAdd);
+
+  listOfVegetables.remove('okra');
+
+  print(listOfVegetables);
+
+  var mappedVegetables = listOfVegetables.map((vegetable) => 'I love $vegetable').toList();
+  print(mappedVegetables);
+}

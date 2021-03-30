@@ -1,0 +1,16 @@
+/**
+You need to create a function absolute which computes the absolute value of a given number.
+
+Input
+The input of the function is a number x of type num whose absolute value you want to compute.
+
+Output
+The output will be the absolute value of x.
+*/
+num absolute(num x) {
+  var abs = x < 0 ? -x : x;
+  return abs;
+}
+main() {
+  print(absolute(5));
+}  

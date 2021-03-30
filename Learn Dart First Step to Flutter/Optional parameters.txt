@@ -1,0 +1,9 @@
+printer(num n,{String s1, String s2}) { 
+  print(n); 
+  print(s1); 
+  print(s2);
+}
+
+main() {
+  printer(75);
+}

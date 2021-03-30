@@ -1,0 +1,31 @@
+main() {
+  var numbers = Map<int, String>();
+
+  numbers[1] = 'one';
+  numbers[2] = 'two';
+  numbers[3] = 'three';
+
+  print(numbers);
+
+  var capitals = {
+    'United States' : 'Washington D.C.',
+    'England' : 'London',
+    'China' : 'Beijing',
+    'Germany' : 'Berlin',
+    'Nigeria' : 'Abuja',
+    'Egypt' : 'Cairo',
+    'New Zealand' : 'Wellington'
+  };
+
+  //print(capitals);
+  print(capitals['Germany']); 
+  print(capitals.containsKey('Brazil'));
+
+  // Retrieving all the keys 
+  var allKeys = capitals.keys;    
+  print("Keys: $allKeys");
+
+  // Retrieving all the values
+  var allValues = capitals.values;
+  print("Values: $allValues"); 
+}

@@ -1,0 +1,16 @@
+class EqualShape{
+  var numOfSides = 0;
+  var lengthOfSides = 0;
+
+  perimeter(){
+    return numOfSides * lengthOfSides;
+  }  
+}
+
+int main() {
+  var shape = EqualShape();
+  shape.numOfSides = 5;
+  shape.lengthOfSides = 5;
+  var result = shape.perimeter();
+  print(result);
+}

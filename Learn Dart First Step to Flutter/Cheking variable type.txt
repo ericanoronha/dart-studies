@@ -1,0 +1,19 @@
+main() {
+  var bookTitle = "Lord of the Rings: The Fellowship of the Ring";
+  print(bookTitle.runtimeType);
+
+  var randomNumber = 5;
+  print(randomNumber.runtimeType);
+
+  var randomNumber2 = 10.0;
+  print(randomNumber2.runtimeType);
+
+  dynamic dynamicVariable = 'A string'; // type String
+  print(dynamicVariable.runtimeType);
+
+  dynamicVariable = 5; // type int
+  print(dynamicVariable.runtimeType);
+
+  dynamicVariable = true; // type bool
+  print(dynamicVariable.runtimeType);
+}

@@ -1,0 +1,34 @@
+main() {
+  var setOfFruits = {'apples', 'oranges', 'watermelon', 'grapes'};
+
+  var moreFruits = {'tomatoes', 'berries'};
+
+  setOfFruits.addAll(moreFruits);
+
+  print(setOfFruits);
+
+  setOfFruits.remove('tomatoes');
+
+  print(setOfFruits);
+
+  //Check whether a single item is in the set
+  print(setOfFruits.contains('grapes'));
+
+  //Check whether multiple items are in the set
+  print(setOfFruits.containsAll(['watermelon', 'bananas'])); //First Method
+
+  var fruitsToCheck = {'watermelon', 'bananas'};
+
+  print(setOfFruits.containsAll(fruitsToCheck)); // Second Method
+
+  var intersectionSet = setOfFruits.intersection(fruitsToCheck);
+     
+  print(intersectionSet);
+
+  var setOfMoreFruits = {'oranges', 'kiwi', 'bananas'};
+
+  var intersectionUnionSet = setOfFruits.union(setOfMoreFruits);
+
+  print(intersectionUnionSet);
+
+}

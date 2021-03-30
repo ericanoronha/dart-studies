@@ -1,0 +1,6 @@
+main() {
+  //In this challenge, you were provided a list of integers and you had to create a new list of integers which was composed by the cubes of the original list.
+  var integers = [1,2,3];
+  var cubes = integers.map((integer) => (integer*integer*integer)).toList();
+  print(cubes);
+}

@@ -1,0 +1,7 @@
+main() {
+  var a = 5;
+  var b = 2;
+  
+  var result = percentage >= 60 ? a - b : b - a;
+  print(result);
+}

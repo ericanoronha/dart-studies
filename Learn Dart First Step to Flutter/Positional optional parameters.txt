@@ -1,0 +1,14 @@
+String mysteryMessage(String who, [String what, String where]){
+  var message = '$who';
+  if(what != null && where == null){
+    message = '$message said $what';
+  } else if (where != null){
+    message = '$message said $what at $where';
+  }
+  return message;
+}
+
+main() {
+  var result = mysteryMessage('Erica', 'hi');
+  print(result);
+}

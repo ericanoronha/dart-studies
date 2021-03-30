@@ -1,0 +1,24 @@
+num arithmeticCalculator(Function f, int x, int y){
+  return f(x,y);
+}
+
+num add(int a, int b) {
+  return a + b;
+}
+
+num subtract(int a, int b) {
+  return a - b;
+}
+
+num multiply(int a, int b) {
+  return a * b;
+}
+
+num divide(int a, int b) {
+  return a / b;
+}
+
+main() {
+  var result = arithmeticCalculator(add, 4, 9);
+  print(result);
+}

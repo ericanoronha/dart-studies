@@ -1,0 +1,25 @@
+main() {
+  var C = 1;
+  var D = 2;
+  
+  print("Before using a compound assignment operator:");
+  print(C);
+
+  C &= D;
+
+  print("After using a compound assignment operator:");
+  print(C);
+
+  print("----------------");
+
+  var A = 12;
+  var B = 5;
+
+  print("~A : ${~A}"); // A complement
+  print("~B : ${~B}"); // B complement
+  print("A & B : ${A & B}"); // A AND B
+  print("A | B : ${A | B}"); // A OR B
+  print("A ^ B : ${A ^ B}"); // A XOR B
+  print("B << 2 : ${B << 2}"); // B Shift Left 2
+  print("A >> 2 : ${A >> 2}"); // A Shift Right 2
+}
